@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lemonkebab.mk
+    $(LOCAL_DIR)/nad_lemonkebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_lemonkebab-user \
-    aosp_lemonkebab-userdebug \
-    aosp_lemonkebab-eng
+    nad_lemonkebab-user \
+    nad_lemonkebab-userdebug \
+    nad_lemonkebab-eng
