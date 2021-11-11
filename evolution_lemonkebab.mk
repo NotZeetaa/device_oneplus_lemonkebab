@@ -21,16 +21,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonkebab device
 $(call inherit-product, device/oneplus/lemonkebab/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
+# Gapps
+USE_GAPPS := true
+# Pixel Charging
+USE_PIXEL_CHARGING := true
+# Blur
+TARGET_USES_BLUR := true
+# In Display Fingerprint Animations
+TARGET_FOD_ANIMATIONS := true
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-BLASTER_BUILD_TYPE := OFFICIAL
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_lemonkebab
+PRODUCT_NAME := evolution_lemonkebab
 PRODUCT_DEVICE := lemonkebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
