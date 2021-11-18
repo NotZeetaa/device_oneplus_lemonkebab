@@ -50,6 +50,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # AOSP Recovery
 TARGET_USES_AOSP_RECOVERY := true
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service
+
 # AVB Key
 #TARGET_USES_CUSTOM_AVB_KEY := true
 
