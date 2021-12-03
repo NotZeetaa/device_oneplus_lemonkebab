@@ -3,6 +3,11 @@ ro.surface_flinger.supports_background_blur=1
 persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
 
+# Graphics
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
+
 # Google Assistant
 ro.opa.eligible_device=true
 
@@ -18,3 +23,4 @@ ro.com.baidu.input.pad_port_r=14
 ro.com.baidu.input.pad_land_l=19
 ro.com.baidu.input.pad_land_r=19
 ro.com.baidu.input.pad_land_b=10
+
